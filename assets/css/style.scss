@@ -1,0 +1,967 @@
+// ===========================================================
+//              Common Css
+// ===========================================================
+
+$blue: #212529;
+$blue-deep: #2a2f34;
+$blue-li: #42474c;
+$gold:#ec8e06;
+$gold-deep:#ff9700;
+$hotpink:#e91d62;
+$hoypink2:#d50c50;
+$brown:#77008e;
+$brown-deeep:#9c26b0;
+$purple:#582aa6;
+$purple-deep:#6739b6;
+$akashi:#00ade0;
+$akashi-deep:#00bff3;
+$ash:#ccdb38;
+$yellow:#f7c407;
+$golapi:#e44445;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Raleway:wght@100;500&display=swap');
+
+// font-family: 'Open Sans', sans-serif;
+
+// font-family: 'Raleway', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Raleway&display=swap');
+
+// font-family: 'Montserrat', sans-serif;
+
+// font-family: 'Open Sans', sans-serif;
+
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Satisfy', cursive;
+// font-family: 'Courgette', cursive;
+
+// font-family: 'Satisfy', cursive;
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+   
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: $blue;
+}
+
+@mixin Border-radious($value) {
+    border-radius: $value;
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    -ms-border-radius: $value;
+    -o-border-radius: $value;
+}
+
+@mixin transition($value) {
+    transition: $value;
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    -ms-transition: $value;
+    -o-transition: $value;
+}
+
+
+
+
+h1 {
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+
+
+}
+
+h2 {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+}
+
+h4 {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+}
+
+h5 {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+
+
+
+p,
+i,
+a,
+li,
+ul,
+button {
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-weight: normal;
+}
+
+button {
+    padding: 14px 30px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    @include Border-radious(60px);
+    text-transform: capitalize;
+}
+
+.title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+
+    .line {
+
+        position: relative;
+        margin-top: 30px;
+        height: 2px;
+        width: 150px;
+        background-color: #1bbc9b;
+
+
+
+
+
+    }
+
+    .line::after {
+
+        content: "";
+        padding: 7px;
+        background-color: #1bbc9b;
+        @include Border-radious(50%);
+        margin-top: -7px;
+        margin-left: -80px;
+        position: absolute;
+    }
+
+    .line::before {
+
+        content: "";
+        padding: 7px;
+        background-color: #1bbc9b;
+        @include Border-radious(50%);
+        margin-top: -7px;
+        margin-left: 70px;
+        position: absolute;
+
+    }
+
+    p {
+        padding: 30px 100px;
+        font-weight: bold;
+
+    }
+
+}
+
+
+section {
+    margin-top: 100px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+// ====================================================
+//                  Desctop Header section
+// =================================================== 
+
+.head {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+    background-color: $blue-deep;
+
+    .manu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .bar{
+            cursor: pointer;
+          background-color: trasparent;
+        }
+    }
+}
+
+.Aactivet {
+    box-shadow: 3px 3px 43px black;
+    margin: 0px 0px;
+    background-color: $blue;
+
+
+}
+
+
+.offcan{
+    .offcanvas{
+        background-color: $blue-deep;
+    } 
+    .offcanvas-header{
+        .btn-close .text-reset{
+            color: white !important;
+        }
+    }
+}
+
+
+// ====================================================
+//                    Baner section
+// =================================================== 
+
+.baner {
+    padding-top: 100px;
+    padding-bottom: 400px;
+    background-color: $blue-deep;
+
+    .list {
+        ul {
+            button {
+                
+                margin-left: 70px;
+            }
+
+            li {
+                margin-top: 6px;
+            }
+        }
+    }
+}
+
+// ====================================================
+//                    prinching section
+// =================================================== 
+
+.prinching {
+    .card-body {
+        .first {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .bton {
+                padding: 0px 5px;
+                @include Border-radious(5px);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: $blue-deep;
+            }
+        }
+
+        .second {
+            margin-top: 45px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .list-group {
+                text-align: center;
+
+                .list-group-item:nth-child(odd) {
+                    border: none;
+                    color: white;
+                    background-color: rgba(0, 0, 0, 0.116);
+                }
+
+                .list-group-item:nth-child(even) {
+                    background-color: rgba(0, 0, 0, 0.061);
+                    border: none;
+                    color: white;
+                }
+
+              
+
+
+            }
+
+        }
+
+
+    }
+}
+
+
+// ====================================================
+//                    Feature section
+// =================================================== 
+.features {
+    .items {
+        display: flex;
+
+        .Content {
+
+            .line {
+
+                position: relative;
+                margin: 15px 0px;
+                height: 1px;
+                width: 80px;
+                background-color: #1bbc9b;
+
+
+
+
+
+            }
+
+
+
+            .line::before {
+
+                content: "";
+                padding: 5px;
+                background-color: #1bbc9b;
+                @include Border-radious(50%);
+                margin-top: -5px;
+                margin-left: 70px;
+                position: absolute;
+
+            }
+
+
+        }
+    }
+}
+
+// ====================================================
+//                   domain section
+// ===================================================
+.domain {
+    background-color: $blue-deep;
+    padding: 90px 0px;
+
+    .search {
+        @include Border-radious(3px);
+
+        .input-group {
+            border: 2px solid white;
+
+            input {
+                color: white;
+                border: none;
+                background-color: transparent;
+            }
+
+            input::placeholder {
+                color: white;
+            }
+
+            form-control:focus {
+                border-color: none;
+                outline: currentColor !important;
+            }
+        }
+
+        padding: 30px;
+        background-color: $purple-deep;
+
+        button {
+            background-color: rgba(255, 255, 255, 0);
+            border: none;
+            @include Border-radious(0px);
+
+        }
+
+    }
+
+    .card {
+
+        padding: 20px 12px;
+
+        .card-body {
+            text-align: center;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h4 {
+                font-weight: 400;
+            }
+        }
+
+        .card-text {
+            font-weight: bold;
+
+
+        }
+
+        .icon {
+            text-align: center;
+
+            i {
+                text-align: center;
+                color: black;
+                @include Border-radious(3px);
+                padding: 3px;
+                background-color: white;
+
+            }
+        }
+
+        .ico {
+            text-align: center;
+
+            i {
+                text-align: center;
+                color: $blue;
+                @include Border-radious(3px);
+                padding: 3px;
+
+
+            }
+        }
+    }
+
+}
+
+
+// ====================================================
+//                   Service Overview section
+// ===================================================
+.services-overview {
+    .title {
+
+        .line,
+        .line::after,
+        .line::before {
+            background-color: $yellow;
+        }
+    }
+
+    .tab-area {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        ul {
+            overflow: hidden;
+            border: 1px solid black;
+            @include Border-radious(60px);
+
+            background-color: $yellow;
+
+            .nav-item {
+
+
+                .nav-link {
+
+                    border-left: 1px solid black;
+                    border-right: 1px solid black;
+                    padding: 15px 15px;
+
+                    @include Border-radious(0px);
+                    color: rgb(0, 0, 0);
+                }
+
+
+
+
+                .active {
+
+
+                    background-color: rgba(0, 0, 0, 0.472);
+                }
+            }
+
+        }
+    }
+
+    .tab-content {
+        text-align: center;
+    }
+}
+
+// ====================================================
+// Featurs section
+// ===================================================
+.plan {
+    margin-top: -120px;
+    padding: 0px 0px 100px 0px;
+    background-color: $blue-deep;
+
+    .title {
+        padding-top: 300px;
+    }
+
+    .tab-area {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        ul {
+            overflow: hidden;
+            border: 2px solid rgb(255, 255, 255);
+            @include Border-radious(60px);
+
+            background-color: transparent;
+
+            .nav-item {
+
+
+                .nav-link {
+
+                    border-left: 1px solid rgb(255, 255, 255);
+                    border-right: 1px solid rgb(255, 255, 255);
+                    padding: 15px 35px;
+
+                    @include Border-radious(0px);
+                    color: rgb(255, 255, 255);
+                }
+
+
+
+
+                .active {
+
+
+
+                    color: $blue;
+                    background-color: white;
+                }
+            }
+
+        }
+    }
+
+    .tab-content {
+        text-align: center;
+    }
+
+    .piller {
+        display: flex;
+        align-items: center;
+
+        .card {
+
+            @include Border-radious(3px);
+            width: 100%;
+            padding: 0px;
+            background-color: $blue;
+
+            .card-body {
+
+
+                padding: 0px;
+
+                .section-1 {
+                    overflow: hidden;
+
+                    .ribon {
+                        position: relative;
+
+                        p {
+                            border: 2px dotted;
+                            margin-top:-10px;
+                            margin-left: -140px;
+                            transform: rotate(-50deg);
+                            padding: 5px 0px;
+                            font-weight: bold;
+                            background-color: $blue;
+                            -webkit-transform: rotate(-50deg);
+                            -moz-transform: rotate(-50deg);
+                            -ms-transform: rotate(-50deg);
+                            -o-transform: rotate(-50deg);
+                        }
+                    }
+
+                    padding: 35px 0px 90px 0px;
+                    background-color: $brown-deeep;
+                    @include Border-radious(3px);
+
+                }
+
+                .amount {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    h2 {
+                        font-size: 72px;
+                    }
+                }
+
+                .section-3 {
+                    .list-group {
+                        padding: 0px;
+                        border: none;
+                        color: white;
+                        @include Border-radious(0px);
+
+                        .list-group-item:nth-child(even) {
+                            background-color: $blue;
+                            border: none;
+                            color: white;
+                        }
+
+                        .list-group-item:nth-child(odd) {
+                            background-color: $blue-deep;
+                            border: none;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ====================================================
+//           world wide section section
+// ===================================================
+
+.world-wide {
+    i {
+        color: $golapi;
+    }
+
+    .title {
+
+        .line,
+        .line::after,
+        .line::before {
+            background-color: $golapi;
+
+        }
+
+    }
+
+    .cotton {
+        .text-l {
+            text-align: left;
+            clear: both;
+        }
+
+        .item {
+
+            margin-top: 45px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            i {
+                font-size: 70px;
+            }
+            .fa-times{
+                font-size: 36px;
+            }
+            h2 {
+
+                font-weight: bolder;
+                font-size: 36px;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .content-1 {
+                display: flex;
+                flex-direction: column;
+
+                h2,
+                p {
+                    margin-left: auto;
+                }
+            }
+
+        }
+    }
+}
+
+// ====================================================
+//            F.A.Q section section
+//  ===================================================
+  
+.F-A-Q{
+    margin-top: -50px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+background-color: $blue-deep;
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: $purple-deep;
+    }
+
+    .accordion-button{
+      background-color: $blue ;
+      color:white; 
+    }
+.accordion-item {
+    background-color: $blue;
+    color: white;
+    margin: 10px 0px;
+    
+}
+
+.detail{
+    p{
+        text-transform: capitalize;
+    }
+    h5{
+        font-size: 16px;
+    }
+}
+
+}
+
+// ====================================================
+//            shop section section
+//  ===================================================
+ .shop{
+     .input-group{
+         padding: 0px 200px;
+        input{
+            @include Border-radious(70px);
+            background-color: transparent;
+            border: 2px solid white;
+            padding: 0px 30px;
+            color: $blue-li;
+           
+        }&::placeholder{
+            font-family: 'Raleway', sans-serif;
+        }input:focus{
+        outline: 0px;
+        }
+         button{
+             background-color: white;
+         }
+         i{ font-size: 28px;
+             color: $blue;
+         }
+     }
+ }
+
+//  ====================================================
+//           testimonial section
+// ===================================================
+
+.testimonial{
+    margin-top: 0px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background-color: $blue-deep;
+  
+        .owl-carousel{
+          
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+                .content{
+                  .first{
+                      i{
+                          font-size: 50px;
+                          padding: 40px;
+                          color: $akashi;
+                      }
+                      padding: 20px;
+                      p{
+                          color: #a1a4a6;
+                      }
+                  }
+                  
+        
+                }
+                .second{
+                    display: flex;
+                    align-items: center;
+                    text-align: left;
+                    justify-content: space-evenly;
+                    h4{
+                        font-size: 16px;
+                    }
+                    img{
+                        height: 120px;
+                        width: 120px;
+                        @include Border-radious(50%);
+                    }
+                }
+            }
+    
+    }
+
+// ====================================================
+//    sponser section
+// ===================================================
+
+.sponser{
+    margin-top: 50px;
+}
+
+// ====================================================
+//    blog section
+// ===================================================
+.blog{
+    margin-top: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    background-color: $blue-deep;
+    .title{
+        .line,
+        .line::after,
+        .line::before {
+            background-color: $golapi;
+        }
+    }
+
+    .card{
+        background-color: transparent;
+        .card-body{
+             .card-title{
+                 font-size: 18px;
+             }
+            .icon{
+                padding-top: 10px;
+                display: flex;
+                justify-content: space-between;
+                .icons{
+                    i{
+                        font-size: 18px;
+                        color: $golapi;
+                    }
+                }
+            }
+            padding: 0px;
+            background-color: rgba(255, 255, 255, 0);
+        }
+        border: none;
+        .card-img-top{
+            border: none;
+            @include Border-radious(0px);
+        }
+        @include Border-radious(0px);
+    }
+}
+// ====================================================
+//    contuct us section
+// ===================================================
+.contact{
+    padding-bottom: 100px;
+    .title{
+        .line,
+        .line::after,
+        .line::before {
+            background-color: $ash;
+        }
+    }
+    .form-group{
+        input{
+            padding: 15px 0px;
+            text-align: center;
+            color: white;
+            font-weight: bolder;
+            background-color: transparent;
+            border: 2px solid $ash;
+            @include Border-radious(70px);
+        }&::placeholder{
+            text-align: center;
+            text-transform: capitalize;
+        }
+        textarea{
+            padding: 30px;
+            text-align: center;
+            color: white;
+            font-weight: bolder;
+            background-color: transparent;
+            border: 2px solid $ash;
+            @include Border-radious(20px);
+        }&::placeholder{
+            text-align: center;
+            text-transform: capitalize;
+        }
+        input[type=submit]{
+            background-color: $ash;
+            color: white;
+            text-transform: uppercase;
+        }
+
+         
+    }
+}
+
+.footer{
+    margin-top: -12px;
+    .secton-1{
+        padding: 40px 0px;
+        height: 160px;
+        width: 100%;
+
+        background-color: $blue-deep;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i{
+            color: white;
+            padding: 0px 15px;
+        }
+    }
+    .copyright{
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+        width: 100%;
+        text-align: center;
+       
+       p{padding-top: 20px;
+         font-size: 15px;
+         display: block;
+         color: white;
+         text-transform: uppercase;
+       }
+    }
+ }
+ 
+ .hido{
+     height: 100vh;
+     width: 100vw;
+     background-color: white;
+     position: fixed;
+   
+ }
