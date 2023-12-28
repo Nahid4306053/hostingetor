@@ -4,6 +4,13 @@
 
 Welcome to COCOHost, your go-to destination for reliable and feature-rich web hosting services. This website is designed to provide users with an intuitive platform to explore and choose from various hosting plans, including VPS (Virtual Private Server) options and specialized WordPress hosting.
 
+
+## Live Website Preview
+[![Project Screenshot](https://github.com/Nahid4306053/hostingetor/blob/hosting/full_web_preview.jpg)](https://chitchatv2.netlify.app)
+
+[Click to View Live Website](nahid4306053.github.io/hostingetor/)
+
+
 ## Features:
 
 ### 1. Hosting Plans:
