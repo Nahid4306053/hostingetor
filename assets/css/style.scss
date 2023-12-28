@@ -521,13 +521,13 @@ li {
 // ===================================================
 .plan {
     margin-top: -120px;
-    padding: 0px 0px 100px 0px;
+    padding: 0px ;
     background-color: $blue-deep;
 
     .title {
         padding-top: 300px;
     }
-
+ 
     .tab-area {
         flex-direction: column;
         display: flex;
